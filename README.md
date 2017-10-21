@@ -29,4 +29,23 @@ Install:
       "eslint": "eslint src",
   },
 ```
+## Error: ESLint Can not find module 'eslint-config-airbnb-base' Referenced from .eslintrc.js
 
+Install the latest ESLint
+ 
+`npm install eslint -g`
+
+Install eslint-config-airbnb-base
+
+`npm install eslint-config-airbnb-base -g`
+
+Install eslint-plugin-import
+
+ 
+`npm install eslint-plugin-import -g`
+
+Restart VSCode (very important). Try again, maybe the problem is gone. 
+
+**Source:**
+[Coldfusion](https://coldfunction.com/p/91)
+[Coldfusion Translated](https://translate.google.com/translate?sl=auto&tl=en&js=y&prev=_t&hl=en&ie=UTF-8&u=https%3A%2F%2Fcoldfunction.com%2Fp%2F91&edit-text=)
