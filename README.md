@@ -23,7 +23,10 @@ run:
 Install:
 `npm i pre-commit --save-dev`
 
+## NPM script
 
-
+  scripts": {
+      "eslint": "eslint src",
+  },
 
 
