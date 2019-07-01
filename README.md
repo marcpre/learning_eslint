@@ -4,6 +4,10 @@
 
 `npm install -g eslint`
 
+or with plugins
+
+`npm install --save-dev eslint babel-eslint eslint-config-airbnb eslint-config-babel eslint-config-prettier eslint-plugin-import`
+
 run:
 
 `npm install eslint --save-dev`
@@ -26,9 +30,32 @@ Install:
 ## NPM script
 ```
   scripts": {
-      "eslint": "eslint src",
+    "lint": "eslint src",
+    "lint:fix": "eslint --fix"
   },
 ```
+
+## VSCode and ESLint
+
+1. Install [vscode eslint plugin](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+2. Create a file called extensions.json in a directory named `.vscode` in the root of the project, with the following content:
+
+```
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "dzannotti.vscode-babel-coloring"
+  ]
+}
+```
+
+# ERRORS
+
+## "Cannot find module prettier"
+
+Install `npm i prettier --save-dev` from [NPM Prettier](https://www.npmjs.com/package/prettier)
+
 ## Error: ESLint Can not find module 'eslint-config-airbnb-base' Referenced from .eslintrc.js
 
 Install the latest ESLint
